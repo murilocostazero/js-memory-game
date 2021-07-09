@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="./index.js"></script>
+    <script src="./src/util.js"></script>
+    <script src="./src/memoryGame.js"></script>
+    <script src="./src/screen.js"></script>
+    <title>Jogo da memória</title>
+</head>
+<body class="container-fluid">
+    <br />
+    <div class="row container-fluid">
+        <button type="button" class="btn btn-success" id="startGame">Vamos nessa!</button>
+        <button type="button" class="btn btn-danger" id="showAll">Mostrar herois</button>
+    </div>
+    <br />
+    
+    <div id="loading" class="row container-fluid invisible" style="margin-bottom: 16px; align-items: center;">
+        <strong id="counter" style="width: 25%;">Começando em 1</strong>
+        <div class="spinner-border text-warning spiner-border-sm" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+    </div>
+
+    <div id="content" class="row">
+
+    </div>
+    <div class="row content-fluid">
+        <div id="message" class="alert alert-success invisible" role="alert">
+            Combinação
+          </div>
+    </div>
+</body>
+</html>
